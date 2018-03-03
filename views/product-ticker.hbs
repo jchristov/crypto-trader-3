@@ -1,0 +1,38 @@
+<h1 xmlns="http://www.w3.org/1999/html">{{title}}</h1>
+<hr>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-striped">
+
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Price</th>
+                    <th>Size</th>
+                    <th>Bid</th>
+                    <th>Ask</th>
+                    <th>Volume</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td>{{data.trade_id}}</td>
+                        <td>{{data.price}}</td>
+                        <td>{{data.size}}</td>
+                        <td>{{data.bid}}</td>
+                        <td>{{data.ask}}</td>
+                        <td>{{data.volume}}</td>
+                        <td>{{data.time}}</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
