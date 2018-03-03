@@ -1,3 +1,5 @@
+const debug = require('debug')('trader:gdax');
+
 var express = require('express');
 var router = express.Router();
 
@@ -5,14 +7,15 @@ var router = express.Router();
 const key = process.env.GDAX_KEY;
 const secret = process.env.GDAX_SECRET;
 const passPhrase = process.env.GDAX_PASSPHRASE;
+const apiUrl = process.env.GDAX_API_URL;
 
 //const apiURI = 'https://api.gdax.com';
-const sandboxURI = 'https://api-public.sandbox.gdax.com';
+//const sandboxURI = 'https://api-public.sandbox.gdax.com';
 
-
-console.log('GDAX Key:', key )
-console.log('GDAX_SECRET:', secret)
-console.log('GDAX PassPhrase:', passPhrase)
+debug('GDAX API: %s', apiUrl)
+debug('GDAX Key: %s', key )
+debug('GDAX_SECRET: %s', secret)
+debug('GDAX PassPhrase: %s', passPhrase)
 
 const Gdax = require('gdax');
 const publicClient = new Gdax.PublicClient();
@@ -20,7 +23,7 @@ const authedClient = new Gdax.AuthenticatedClient(
     key,
     secret,
     passPhrase,
-    sandboxURI
+    apiUrl
 );
 
 
