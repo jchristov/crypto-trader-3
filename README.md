@@ -48,9 +48,11 @@ The endpoints will either be the *Sandbox* ot the *Live* environment
 ### Live 
 
 GDAX_API_URL = https://api.gdax.com
+
 GDAX_WS_URL = wss://ws-feed.gdax.com
 
 ### Sandbox 
 
 GDAX_API_URL = https://api-public.sandbox.gdax.com
+
 GDAX_WS_URL = wss://ws-feed-public.sandbox.gdax.com
