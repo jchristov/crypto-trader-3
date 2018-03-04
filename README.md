@@ -27,6 +27,14 @@ design
 
    High level visualisation of the funds available, trades and states of the markets
 
+## Status
+
+I just started - give me a chance...
+* Simple Web Application built
+  * Focusing on visualising the Order-book
+  * Basic account, product and market pages available
+* Live stream work started
+  * Receiving events and decoding
 
 ## Setup
 
