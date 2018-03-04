@@ -2,7 +2,6 @@ const Gdax = require('gdax');
 const debug = require('debug')('trader:feeds')
 
 
-
 const key = process.env.GDAX_KEY;
 const secret = process.env.GDAX_SECRET;
 const passPhrase = process.env.GDAX_PASSPHRASE;

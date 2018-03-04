@@ -51,7 +51,7 @@ app.use(function (err, req, res, next) {
 
 
 // Now that the Application is setup - start the live streams
-var liveStream = require('./gdax-feeds')
+var liveStream = require('./feeds/gdax-feeds')
 liveStream.startGdaxFeed(['BTC-USD', 'ETH-USD']);
 
 //var gtt = require('./gdax-feeds');
