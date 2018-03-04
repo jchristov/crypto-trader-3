@@ -34,16 +34,20 @@ The following environment variables need to be defined:
 
 *API Authentication*
 
+The following authentication tokens can be generated using your online GDAX account
+
 * GDAX_PASSPHRASE
 * GDAX_SECRET
 * GDAX_KEY
 
 *Environment endpoints*
 
+The endpoints will either be the *Sandbox* or the *Live* environment
+
 * GDAX_WS_URL
 * GDAX_API_URL
 
-The endpoints will either be the *Sandbox* ot the *Live* environment
+
 
 ### Live 
 
